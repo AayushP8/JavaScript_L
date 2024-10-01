@@ -65,3 +65,37 @@ const myFunction = function(){
 }
 
 //function Datatype -> Object or also known as Object Function
+
+
+// ----------------------------- ---------- ---------------
+
+/*
+Stack: Primitive Data Type is stored
+|-> value is not change as value is passed
+
+Heap: Non-Primitive data type is stored
+|-> value is changed as it is passed by reference
+*/
+
+//Heap
+let userOne = {
+    email: "abc@mail.com",
+    age: 22,
+}
+
+let userTwo = userOne
+
+userTwo.email = "pqr@mail.com"
+
+console.log(userOne.email) // pqr@mail.com
+console.log(userTwo.email) // pqr@mail.com
+
+//stack
+
+let name1 = "Ram"
+let name2 = name1
+name2 = "jay"
+
+console.log(name1); // Ram
+console.log(name2); // jay
+
