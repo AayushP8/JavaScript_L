@@ -31,3 +31,24 @@ console.log(boolIsLogged); // print true
 let val = 99
 let valInString = String(val);
 console.log(typeof val);
+
+//------------ Operations -----------------------
+let val2 = 7;
+let negVal = -val2;
+console.log(negVal);
+
+let str = "hello"
+let str2 = " World"
+let str3 = str + str2;
+console.log(str3);
+
+console.log("1" + 2); //12
+console.log(1 + "2"); //12
+console.log("1" + 2 + 2); //122 // bad Habit
+console.log(1 + 2 + "5"); //35  // bad Habit
+
+console.log(true); //true
+console.log(+true); //1 //bad habit
+
+
+
