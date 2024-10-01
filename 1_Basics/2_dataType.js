@@ -27,3 +27,41 @@ object
 console.log(typeof "abc")
 console.log(typeof null) // it will print object
 console.log(typeof undefined) //it will print undefined only
+
+//------------------ Summary -------------------
+
+/*
+Primitive -/ reference type-
+call by value
+7 Types: String, Number, Boolean, null, undefined, symbol, BigInt
+
+*/
+
+const scoreVal = 10.3 // it is also number
+
+const id = Symbol('123');
+const id2 = Symbol('123');
+console.log(id == id2); // false
+
+/*
+Reference (Non Primitive)
+
+Array, Objects, Functions
+
+*/
+
+//Array
+const arr = ["ab","cd","ef"]
+//object
+let myObj ={
+    name : "abc",
+    age: 18,
+}
+
+//function
+
+const myFunction = function(){
+    console.log("Hello");
+}
+
+//function Datatype -> Object or also known as Object Function
